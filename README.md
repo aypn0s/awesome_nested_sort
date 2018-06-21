@@ -2,7 +2,8 @@
 
 Easy GUI sorting for awesome nested set (works with jQuery)
 
-![](https://raw.githubusercontent.com/aypn0s/awesome_nested_sort/master/docs/screen1.png)
+<img src="https://raw.githubusercontent.com/aypn0s/awesome_nested_sort/master/docs/screen.png"
+  width="300">
 
 ## Requirements
 
