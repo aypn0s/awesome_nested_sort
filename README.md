@@ -2,21 +2,33 @@
 
 Easy GUI sorting for awesome nested set (works with jQuery)
 
+![](https://raw.githubusercontent.com/aypn0s/awesome_nested_sort/master/docs/screen.png)
+
+## Requirements
+
+Your project need to use jQuery and awesome_nested_set for this gem to work
+
 ## Installation
 
-**Model**
+### Gemfile
+
+```ruby
+gem 'awesome_nested_sort', github: 'aypn0s/awesome_nested_sort'
+```
+
+### Model
 Include gem methods in the model.
 ```ruby
 include AwesomeNestedSort::Methods
 ```
 
-**Controller**
+### Controller
 Include the sort action.
 ```ruby
 include AwesomeNestedSortController::Sort
 ```
 
-**Routes**
+### Routes
 In routes create a sort action with put method in the corresponding resource.
 Let's assume that we have resources for pages:
 ```ruby
@@ -29,14 +41,14 @@ resources :pages do
 end
 ```
 
-**Javascripts**
+### Javascripts
 In application.js after jQuery add:
 ```ruby
 //= require awesome_nested_sort/nestable
 //= require awesome_nested_sort/awesome_nested_sort
 ```
 
-**Stylesheets**
+### Stylesheets
 In application.css add:
 ```ruby
 *= require awesome_nested_sort/awesome_nested_sort
